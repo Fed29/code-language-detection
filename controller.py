@@ -12,10 +12,10 @@ app = Flask(__name__)
 # This form will take in the form data on the front end and use it to predict
 # using a pre-loaded model
 class PredictForm(FlaskForm):
-    code = TextAreaField('Code to translate (max 800 chars):',
+    code = TextAreaField('Code to detect (max 800 chars):',
                          validators=[validators.required(),
                                      validators.length(max=800)])
-    submit = SubmitField('Submit')
+    submit = SubmitField('Detect')
 
 # load model and load it in memory
 

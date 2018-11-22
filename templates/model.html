@@ -8,7 +8,7 @@
             The language of the code is: <br> <br>
             {{ prediction }}
             {% else %}
-                Please fill out the form below!
+                Please paste your code below!
             {% endif %}
         </h1>
     </div>
@@ -18,11 +18,12 @@
             <div id="header">
                 {{ predict_form.code.label }}
             </div>
-            <div id="content">
+            <div id="text">
                 {{ predict_form.code(rows=10, cols=80, maxlength=800) }}
             </div>
             <div id="footer">
                 {{ predict_form.submit() }}
+                <input type="reset" value="Reset" />
             </div>
         </form>
     </div>

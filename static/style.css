@@ -1,7 +1,10 @@
 /*CSS for Andrew's Wedding.  Sarah can come too.*/
 a {color:inherit;  text-decoration: none;}
 * {margin: 0px; padding: 0px;}
-body {padding-bottom: 100px;}
+body {
+    padding-bottom: 100px;
+    font-family: monospace;
+}
 
 /*header*/
 .outerContainer {
@@ -12,7 +15,6 @@ body {padding-bottom: 100px;}
 }
 
 .outerContainer .header-div {
-	font-family: "Helvetica";
 	font-size: 24px;
 	background-color: #2D6BBF;
     display: table-cell;
@@ -24,10 +26,33 @@ body {padding-bottom: 100px;}
 
 /*content*/
 .code {
-	font-family: "Helvetica";
 	font-size: 18px;
 	padding: 25px;
 	text-align: center;
 	margin-left: auto;
     margin-right: auto;
 }
+
+div.content
+{
+    padding: 10px 0;
+    text-align: center;
+}
+
+#footer {
+    padding-top: 10px;
+}
+
+input[type=reset],
+input[type=submit] {
+    background-color: #0693cd;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size:16px;
+    font-weight: bold;
+    line-height: 1.4;
+    padding: 10px;
+    width: 180px
+  }
