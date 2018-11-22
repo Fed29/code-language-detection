@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <div class="content">
+        <h1>
+            {% if prediction %}
+            The language of the code is: <br> <br>
+            {{ prediction }}
+            {% else %}
+                Please fill out the form below!
+            {% endif %}
+        </h1>
+    </div>
+
+    <div class="content">
+        <form method="POST">
+            <div id="header">
+                {{ predict_form.code.label }}
+            </div>
+            <div id="content">
+                {{ predict_form.code(rows=10, cols=80, maxlength=800) }}
+            </div>
+            <div id="footer">
+                {{ predict_form.submit() }}
+            </div>
+        </form>
+    </div>
+
+{% endblock %}
