@@ -105,3 +105,4 @@ venv.bak/
 
 */raw_data/*
 .vscode
+.idea/
